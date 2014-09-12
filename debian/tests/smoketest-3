@@ -1,0 +1,4 @@
+#!/usr/bin/python3
+
+import colorama
+print(colorama.__file__, colorama.__version__)

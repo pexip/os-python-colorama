@@ -1,0 +1,23 @@
+#!/usr/bin/python3
+
+# Normally, colorama is not available.
+try:
+    import colorama
+except ImportError:
+    pass
+else:
+    raise AssertionError('colorama should not be available')
+
+# Put the .whl file on sys.path, and it will now be importable.  We don't know
+# what version of colorama is installed though, and the .whl has version
+# information embedded in the file name.
+import glob
+
+paths = glob.glob('/usr/share/python-wheels/colorama-*.whl')
+assert len(paths) == 1, paths
+
+import sys
+sys.path.insert(0, paths[0])
+
+import colorama
+print(colorama.__file__, colorama.__version__)
