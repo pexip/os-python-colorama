@@ -1,8 +1,9 @@
 Source: python-colorama
 Section: python
 Priority: optional
-Maintainer: Khalid El Fathi <khalid@elfathi.fr>
-Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Khalid El Fathi <khalid@elfathi.fr>
+XSBC-Pexip-Original-Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 Build-Depends: debhelper (>= 9.0.0),
                python (>= 2.6.6-3~),
                python-setuptools,
@@ -17,6 +18,7 @@ Vcs-Browser: http://git.debian.org/?p=collab-maint/python-colorama.git;a=summary
 X-Python-Version: >= 2.5
 X-Python3-Version: >= 3.3
 XS-Testsuite: autopkgtest
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ jessie
 
 Package: python-colorama
 Architecture: all
