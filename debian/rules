@@ -19,10 +19,10 @@ override_dh_auto_install:
 		python$$pyvers setup.py install --install-layout=deb \
 			--root $(CURDIR)/debian/python3-colorama; \
 	done
-	mkdir -p $(CURDIR)/debian/tmp/usr/share/python-wheels
-	python3 setup.py bdist_wheel \
-		--universal \
-		-d $(CURDIR)/debian/tmp/usr/share/python-wheels
+#	mkdir -p $(CURDIR)/debian/tmp/usr/share/python-wheels
+#	python3 setup.py bdist_wheel \
+#		--universal \
+#		-d $(CURDIR)/debian/tmp/usr/share/python-wheels
 
 override_dh_clean:
 	dh_clean -O--buildsystem=python_distutils
