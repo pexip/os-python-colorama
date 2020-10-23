@@ -14,11 +14,6 @@ except ImportError:
 NAME = 'colorama'
 
 
-def get_long_description(filename):
-    readme = os.path.join(os.path.dirname(__file__), filename)
-    with open(readme) as fp:
-        return fp.read()
-
 def read_file(path):
     with open(os.path.join(os.path.dirname(__file__), path)) as fp:
         return fp.read()
@@ -42,26 +37,28 @@ setup(
     keywords='color colour terminal text ansi windows crossplatform xplatform',
     author='Jonathan Hartley',
     author_email='tartley@tartley.com',
-    url='https://pypi.python.org/pypi/colorama',
+    maintainer='Arnon Yaari',
+    url='https://github.com/tartley/colorama',
     license='BSD',
     packages=[NAME],
-    # see classifiers http://pypi.python.org/pypi?%3Aaction=list_classifiers
+    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*',
+    # see classifiers https://pypi.org/pypi?%3Aaction=list_classifiers
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
+        'Programming Language :: Python',
         'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.5',
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.1',
-        'Programming Language :: Python :: 3.2',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: Implementation :: CPython',
+        'Programming Language :: Python :: Implementation :: PyPy',
         'Topic :: Terminals',
     ]
 )
-

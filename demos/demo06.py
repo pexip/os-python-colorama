@@ -2,9 +2,11 @@
 from __future__ import print_function
 import fixpath
 import colorama
-from colorama import Fore, Back, Style
+from colorama import Fore, Back, Style, Cursor
 from random import randint, choice
 from string import printable
+
+# Demonstrate printing colored, random characters at random positions on the screen
 
 # Fore, Back and Style are convenience classes for the constant ANSI strings that set
 #     the foreground, background and style. The don't have any magic of their own.
@@ -23,8 +25,7 @@ PASSES = 1000
 
 def main():
     colorama.init()
-    # gratuitous use of lambda.
-    pos = lambda y, x: '\x1b[%d;%dH' % (y, x)
+    pos = lambda y, x: Cursor.POS(x, y)
     # draw a white border.
     print(Back.WHITE, end='')
     print('%s%s' % (pos(MINY, MINX), ' '*MAXX), end='')

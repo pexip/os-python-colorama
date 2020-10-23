@@ -1,8 +1,1 @@
-Tests: smoketest-2
-Depends: python-colorama
-
-Tests: smoketest-3
-Depends: python3-colorama
-
-Tests: smoketest-whl
-Depends: python-colorama-whl
+Test-Command: python3 -c "import colorama; print(colorama.__version__)"
