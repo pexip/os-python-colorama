@@ -1,3 +1,9 @@
+python-colorama (0.4.4-1pexip1) pexip; urgency=medium
+
+  * Migrate to Bullseye
+
+ -- Huw Jones <huw@pexip.com>  Wed, 9 Jun 2021 18:30:10 +0100
+
 python-colorama (0.4.4-1) unstable; urgency=medium
 
   [ Gürkan Myczko ]
