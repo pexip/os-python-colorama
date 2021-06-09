@@ -1,3 +1,87 @@
+python-colorama (0.4.4-1) unstable; urgency=medium
+
+  [ Gürkan Myczko ]
+  * New upstream version.
+  * Bump standards version to 4.5.0.
+  * d/copyright:
+    - update years, add myself
+    - add Upstream-Contact
+    - add missing Arnon Yaari
+  * d/control:
+    - update team maintainer address.
+    - add Rules-Requires-Root.
+  * d/u/metadata: added.
+  * d/README.Debian: use https protocol.
+  * d/examples: renamed to python3-colorama.examples.
+  * d/dirs: dropped.
+
+  [ Ondřej Nový ]
+  * d/copyright: Use https protocol in Format field.
+  * Use debhelper-compat instead of debian/compat.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+  * d/watch: Use https protocol.
+
+ -- Gürkan Myczko <gurkan@phys.ethz.ch>  Fri, 23 Oct 2020 11:34:28 +0200
+
+python-colorama (0.4.3-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Add/update Vcs fields.
+  * Bump standards version to 4.4.1.
+
+ -- Gürkan Myczko <gurkan@phys.ethz.ch>  Tue, 10 Dec 2019 12:26:52 +0100
+
+python-colorama (0.4.1-1) unstable; urgency=medium
+
+  * New upstream version. (Closes: #914689)
+  * Bump standards version to 4.4.0.
+  * Bump debhelper version to 11.
+  * d/clean: added.
+  * d/control
+    - drop python2 support. (Closes: #937655)
+    - drop Khalid El Fathi from Maintainers, and add myself.
+      (Closes: #858658)
+
+ -- Gürkan Myczko <gurkan@phys.ethz.ch>  Thu, 03 Oct 2019 12:21:54 +0200
+
+python-colorama (0.3.7-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * d/control: Bump Standards-Version to 3.9.7 with no other changes needed.
+
+ -- Barry Warsaw <barry@debian.org>  Tue, 08 Mar 2016 13:11:33 -0500
+
+python-colorama (0.3.6-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * d/control:
+    - Fix long description for python3-colorama (Closes: #810541)
+    - Remove python-colorama-whl binary package as it's no longer needed.
+    - Remove python3-wheel from, and add dh-python to, Build-Depends.
+    - Remove unnecessary XS-Testsuite field.
+    - Bump X-Python-Version to 2.7 and X-Python3-Version to 3.4.
+  * d/python-colorama-whl.install: Removed.
+  * d/rules:
+    - Convert to --buildsystem=pybuild.
+    - Remove override_dh_auto_install and override_dh_clean.
+  * d/tests:
+    - control: Simplify by using Test-Command fields for the smoke tests.
+    - smoketest-{2,3,whl}: Removed.
+
+ -- Barry Warsaw <barry@debian.org>  Tue, 09 Feb 2016 11:39:08 -0500
+
+python-colorama (0.3.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * d/control: Bump Standards-Version to 3.9.6
+  * d/watch: Use pypi.debian.net mirror.
+
+ -- Barry Warsaw <barry@debian.org>  Fri, 01 May 2015 11:29:19 -0400
+
 python-colorama (0.3.2-1pexip1) pexip; urgency=low
 
   * Prepare Pexip packaging
